@@ -21,7 +21,7 @@ a {
 }
 
 main {
-    background: #fff;
+    background: radial-gradient(#54ffb9, #017143);
     min-height: 100vh;
     max-height: 100vh;
 }
@@ -48,7 +48,7 @@ nav ul {
 nav ul li a {
     display: inline-block;
     cursor: pointer;
-    color: var(--Green);
+    color: #fff;
     font-weight: 400;
     margin-left: 40px;
 }
@@ -160,6 +160,6 @@ nav ul li a:hover {
             left: 0;
             width: 100%;
             height: 100%;
-            background: #017143;
+            background: #00ff9636;
             clip-path: circle(600px at right 800px);
 }
