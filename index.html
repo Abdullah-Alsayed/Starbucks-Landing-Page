@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Starbucks Landing Page</title>
+  </head>
+  <body>
+    <main>
+      <div id="circle-shape" class="circle"></div>
+      <section class="container">
+        <header>
+          <img src="img/logo.png" alt="logo" />
+          <nav>
+            <ul>
+              <li>
+                <a>Home</a>
+              </li>
+              <li>
+                <a>Menu</a>
+              </li>
+              <li>
+                <a>what's new</a>
+              </li>
+              <li>
+                <a>contact</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section>
+          <div class="Content-section">
+            <div class="Text-Section">
+              <h2>It's not just Coffee <br />It's <span>Starbucks</span></h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Expedita odio in repellat cum harum magnam omnis, aspernatur,
+                amet cumque, repudiandae iure perferendis deleniti fugiat
+                numquam iste? Cumque repellendus fuga accusantium dignissimos
+                facere commodi provident quis. Obcaecati explicabo temporibus ut
+                beatae?
+              </p>
+              <a href="#">Learn More</a>
+            </div>
+            <div class="Img-Section">
+              <img src="/img/img1.png" id="MainImg" />
+            </div>
+            <div class="Social-Section">
+              <img src="/img/facebook.png" alt="facebook Img" /><img
+                src="img/twitter.png"
+                alt="twitter Img"
+              /><img src="img/instagram.png" alt="instagram Img" />
+            </div>
+          </div>
+          <div class="Thumb-Section">
+            <img
+              src="/img/thumb1.png"
+              onclick="Change('img1.png','#017143')"
+              alt="thumb1"
+            />
+            <img
+              src="/img/thumb2.png"
+              onclick="Change('img2.png','#eb7495')"
+              alt="thumb2"
+            />
+            <img
+              src="/img/thumb3.png"
+              onclick="Change('img3.png','#d752b1')"
+              alt="thumb3"
+            />
+          </div>
+        </section>
+      </section>
+    </main>
+    <script>
+      function Change(img, color) {
+        document.getElementById("circle-shape").style.background = color;
+        document.getElementById("MainImg").src = `img/${img}`;
+      }
+    </script>
+  </body>
+</html>
