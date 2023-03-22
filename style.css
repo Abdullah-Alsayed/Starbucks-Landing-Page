@@ -113,6 +113,7 @@ nav ul li a:hover {
 
 .Img-Section img {
     max-width: 340px;
+    animation: Pulse 8s ease-in-out 0ms infinite alternate-reverse none;
 }
 
 .Img-Section img:hover {
@@ -130,6 +131,7 @@ nav ul li a:hover {
 .Thumb-Section img {
     max-width: 60px;
     cursor: pointer;
+animation: Shake 10s ease-in-out 0ms infinite alternate-reverse none;
 }
 
 .Thumb-Section img:hover {
@@ -152,6 +154,7 @@ nav ul li a:hover {
 }
 .Social-Section img:hover{
     transform: scale(1.5);
+    filter: invert(0);
     transition: var(--transition);
 }
 .circle{
@@ -162,4 +165,18 @@ nav ul li a:hover {
             height: 100%;
             background: #00ff9636;
             clip-path: circle(600px at right 800px);
+}
+@keyframes Pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
 }
